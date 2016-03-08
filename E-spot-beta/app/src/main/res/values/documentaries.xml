@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="documentaries">
+        <item>Maya Angelou: And Still I Rise</item>
+        <item>Nothing Left Unsaid: Gloria Vanderbilt anm Anderson Cooper</item>
+        <item>Under the Gun</item>
+        <item>Mapplethorpe: Look at the Pictures</item>
+        <item>Lo and Behold: Reveries of the Connected World</item>
+        <item>Michael Jackson's Journey from Motown to Off the Wall</item>
+        <item>Unlocking the Cage</item>
+        <item>How to Let Go of the World and Love All the Things That Climate Can't Change</item>
+        <item>Norman Lear: Just Another Version of You</item>
+        <item>The Lovers and the Despot</item>
+    </string-array>
+</resources>
