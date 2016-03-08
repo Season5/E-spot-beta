@@ -62,7 +62,7 @@ public class MainIntroActivity extends IntroActivity {
         /* Enable/disable fullscreen */
         setFullscreen(true);
 
-        super.onCreate(savedInstanceState);
+//        super.onCreate(savedInstanceState);
 
         /* Enable/disable skip button */
         setSkipEnabled(true);
