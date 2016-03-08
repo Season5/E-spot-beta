@@ -1,5 +1,7 @@
 package com.spot.e.espot_beta;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 
@@ -21,7 +23,7 @@ public class MainIntroActivity extends IntroActivity {
         addSlide(new SimpleSlide.Builder()
                 .title(R.string.title)
                 .description(R.string.description_1)
-                .image(R.drawable.orphanage)
+                .description(R.string.description_2)
                 .background(R.color.background_1)
                 .backgroundDark(R.color.background_dark_1)
                 .build());
@@ -30,9 +32,9 @@ public class MainIntroActivity extends IntroActivity {
          * Standard slide (like Google's intros)
          */
         addSlide(new SimpleSlide.Builder()
-                .title(R.string.title)
-                .description(R.string.description_1)
-                .image(R.drawable.chyulu)
+//                .title(R.string.title)
+                .description(R.string.description_3)
+                .image(R.drawable.movies)
                 .background(R.color.background_1)
                 .backgroundDark(R.color.background_dark_1)
                 .build());
@@ -41,9 +43,9 @@ public class MainIntroActivity extends IntroActivity {
          * Standard slide (like Google's intros)
          */
         addSlide(new SimpleSlide.Builder()
-                .title(R.string.title)
-                .description(R.string.description_1)
-                .image(R.drawable.marsabit)
+//                .title(R.string.title)
+                .description(R.string.description_4)
+                .image(R.drawable.series)
                 .background(R.color.background_1)
                 .backgroundDark(R.color.background_dark_1)
                 .build());
@@ -52,9 +54,20 @@ public class MainIntroActivity extends IntroActivity {
          * Standard slide (like Google's intros)
          */
         addSlide(new SimpleSlide.Builder()
-                .title(R.string.title)
-                .description(R.string.description_1)
-                .image(R.drawable.mtkenya)
+//                .title(R.string.title)
+                .description(R.string.description_5)
+                .image(R.drawable.animation)
+                .background(R.color.background_1)
+                .backgroundDark(R.color.background_dark_1)
+                .build());
+
+        /**
+         * Standard slide (like Google's intros)
+         */
+        addSlide(new SimpleSlide.Builder()
+//                .title(R.string.title)
+                .description(R.string.description_6)
+                .image(R.drawable.documentary)
                 .background(R.color.background_1)
                 .backgroundDark(R.color.background_dark_1)
                 .build());
@@ -72,6 +85,8 @@ public class MainIntroActivity extends IntroActivity {
         setFinishEnabled(true);
 
         /* Add your own page change listeners */
+
+
         addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -85,6 +100,14 @@ public class MainIntroActivity extends IntroActivity {
             public void onPageScrollStateChanged(int state) {
             }
         });
+
+
+    }
+    public void onStop(){
+        super.onStop();
+        final Context context = this;
+        Intent intent = new Intent(context,Main.class);
+        startActivity(intent);
 
     }
 }
