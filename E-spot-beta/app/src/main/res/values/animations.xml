@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="animations">
+        <item>Home</item>
+        <item>KungFu Panda 3</item>
+        <item>Zootopia</item>
+        <item>Angry Birds the movie</item>
+        <item>Finding Dory</item>
+        <item>Ratchet and Clank Focus</item>
+        <item>Ice Age: Collision Course</item>
+        <item>The Good Dinosaur</item>
+        <item>The Peanut Movie</item>
+        <item>Sly Cooper</item>
+        <item>The Monk and the Fish</item>
+        <item>The Red Turtle</item>
+        <item>Moana</item>
+        <item>The Secret Life of Pets</item>
+    </string-array>
+</resources>

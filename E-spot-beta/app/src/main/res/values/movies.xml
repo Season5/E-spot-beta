@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movies">
+        <item>Batman Vs Superman- Dawn Of Justice</item>
+        <item>Captain America - Civil War</item>
+        <item>Deadpool</item>
+        <item>X-men Apocalypse</item>
+        <item>Adobe Fireworks</item>
+        <item>The Jungle Book</item>
+        <item>The Divergent series - Allegient</item>
+        <item>Independence Day: Resurgence</item>
+        <item>Rogue One : A star wars Story</item>
+        <item>Doctor Strange</item>
+    </string-array>
+
+</resources>

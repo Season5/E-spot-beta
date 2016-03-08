@@ -13,42 +13,45 @@ import android.widget.Toast;
 public class Documentaries extends ListActivity {
 
 
-    String documentaries[] =
-
-            {
-
-                    "Maya Angelou: And Still I Rise",
-                    "Nothing Left Unsaid: Gloria Vanderbilt & Anderson Cooper",
-                    "Under the Gun",
-                    "Newtown",
-                    "Holy Hell",
-                    "Mapplethorpe: Look at the Pictures",
-                    "Life, Animated",
-                    "Lo and Behold: Reveries of the Connected World",
-                    "Weiner",
-                    "Michael Jackson's Journey from Motown to Off the Wall",
-                    "Uncle Howard",
-                    "Unlocking the Cage",
-                    "How to Let Go of the World and Love All the Things That Climate Can't Change",
-                    "Norman Lear: Just Another Version of You",
-                    "Tickled",
-                    "The Lovers and the Despot",
-                    "Jim: The James Foley Story",
-                    "Kiki",
-
-            };
+//    String documentaries[] =
+//
+//            {
+//
+//                    "Maya Angelou: And Still I Rise",
+//                    "Nothing Left Unsaid: Gloria Vanderbilt & Anderson Cooper",
+//                    "Under the Gun",
+//                    "Newtown",
+//                    "Holy Hell",
+//                    "Mapplethorpe: Look at the Pictures",
+//                    "Life, Animated",
+//                    "Lo and Behold: Reveries of the Connected World",
+//                    "Weiner",
+//                    "Michael Jackson's Journey from Motown to Off the Wall",
+//                    "Uncle Howard",
+//                    "Unlocking the Cage",
+//                    "How to Let Go of the World and Love All the Things That Climate Can't Change",
+//                    "Norman Lear: Just Another Version of You",
+//                    "Tickled",
+//                    "The Lovers and the Despot",
+//                    "Jim: The James Foley Story",
+//                    "Kiki",
+//
+//            };
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.movies);
-        setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, documentaries));
+        //setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, movies));
+        String[] documenteries = getResources().getStringArray(R.array.documentaries);
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.movies, R.id.label, documenteries));
+
     }
 
-    public void onListItemClick(
-            ListView parent, View v, int position, long id)
-    {
-        Toast.makeText(this, "Your Choice is " + documentaries[position], Toast.LENGTH_LONG).show();
-    }
+//    public void onListItemClick(
+//            ListView parent, View v, int position, long id)
+//    {
+//        Toast.makeText(this, "Your Choice is " + documentaries[position], Toast.LENGTH_LONG).show();
+//    }
 }
