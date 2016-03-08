@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="series">
+        <item>Breaking Bad</item>
+        <item>Game of Thrones</item>
+        <item>The Returned</item>
+        <item>Mad Men</item>
+        <item>Marvels Agents of Shield</item>
+        <item>2 Broke Girls</item>
+        <item>Agent X</item>
+        <item>The Walking Dead</item>
+        <item>Kevin from Work</item>
+        <item>Quantico</item>
+        <item>The Player</item>
+        <item>Silicon Valley</item>
+        <item>BlindSpot</item>
+        <item>Narcos</item>
+    </string-array>
+</resources>
